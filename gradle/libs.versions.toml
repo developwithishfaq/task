@@ -23,6 +23,8 @@ navigationFragmentKtx = "2.8.7"
 navigationUiKtx = "2.8.7"
 retrofit = "2.9.0"
 roomKtx = "2.6.1"
+sdpAndroid = "1.1.1"
+sspAndroid = "1.1.1"
 
 
 [libraries]
@@ -62,10 +64,13 @@ kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomKtx" }
+sdp-android = { module = "com.intuit.sdp:sdp-android", version.ref = "sdpAndroid" }
+ssp-android = { module = "com.intuit.ssp:ssp-android", version.ref = "sspAndroid" }
 
 [bundles]
 ktor-app = ["ktor-client-core", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json", "ktor-client-okhttp"]
 compose-support = ["androidx-activity-compose", "androidx-ui", "androidx-ui-graphics", "androidx-ui-tooling", "androidx-material3", "androidx-navigation-compose"]
+ssp-sdp = ["ssp-android", "sdp-android"]
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -54,6 +54,8 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.dagger.hilt.compiler)
 
+    implementation(libs.bundles.ssp.sdp)
+
     //Room Database
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)

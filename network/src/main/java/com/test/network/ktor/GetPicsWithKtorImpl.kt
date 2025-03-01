@@ -43,6 +43,7 @@ class GetPicsWithKtorImpl : GetPics {
             Log.d(TAG, "getPics: ktor Response $response")
             NetworkResponse.Success(response)
         } catch (e: Exception) {
+
             NetworkResponse.Failure(e.message ?: "")
         }
     }

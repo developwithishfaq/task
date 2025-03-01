@@ -72,6 +72,10 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.compose)
 
+
+    implementation(libs.bundles.ktor.app)
+    implementation(libs.kotlinx.serialization.json)
+
     implementation(project(":domain"))
     implementation(project(":framework"))
 }
