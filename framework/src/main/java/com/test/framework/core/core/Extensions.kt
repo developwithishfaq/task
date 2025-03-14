@@ -7,6 +7,8 @@ import kotlinx.coroutines.runBlocking
 
 // 2,4,5,1,3
 // 5, 4, 2 ,1,3
+
+// 4,2,1,3,4
 suspend fun doAsyncOperation() {
     delay(1000)
     println("Async operation completed")//1
